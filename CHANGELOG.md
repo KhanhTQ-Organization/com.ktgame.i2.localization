@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/KhanhTQ-Organization/com.ktgame.i2.localization/compare/v1.0.0...v1.0.1) (2026-08-28)
+
+
+### Bug Fixes
+
+* update core ([867e9e8](https://github.com/KhanhTQ-Organization/com.ktgame.i2.localization/commit/867e9e897dc07df94334e97e3eac7fd4e2cf7b0d))
+
 # 1.0.0 (2026-08-28)
 
 
