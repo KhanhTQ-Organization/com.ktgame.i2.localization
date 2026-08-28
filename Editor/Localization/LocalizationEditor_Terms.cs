@@ -809,7 +809,7 @@ namespace I2.Loc
         #endregion
 
 
-        [MenuItem("Tools/I2 Localization/Refresh Localizations", false, 16)]
+        [MenuItem("Ktgame/I2 Localization/Refresh Localizations", false, 16)]
         public static void CallLocalizeAll()
         {
             LocalizationManager.LocalizeAll(true);

@@ -35,37 +35,37 @@ namespace I2.Loc
 
 		const string EditorPrefs_AutoEnablePlugins = "I2Loc AutoEnablePlugins";
 
-		[MenuItem( "Tools/I2 Localization/Enable Plugins/Force Detection", false, 0 )]
+		[MenuItem( "Ktgame/I2 Localization/Enable Plugins/Force Detection", false, 0 )]
 		public static void ForceCheckPlugins()
 		{
 			CheckPlugins( true );
 		}
 
-		[MenuItem( "Tools/I2 Localization/Enable Plugins/Enable Auto Detection", false, 1 )]
+		[MenuItem( "Ktgame/I2 Localization/Enable Plugins/Enable Auto Detection", false, 1 )]
 		public static void EnableAutoCheckPlugins()
 		{
 			EditorPrefs.SetBool(EditorPrefs_AutoEnablePlugins, true);
 		}
-		[MenuItem( "Tools/I2 Localization/Enable Plugins/Enable Auto Detection", true)]
+		[MenuItem( "Ktgame/I2 Localization/Enable Plugins/Enable Auto Detection", true)]
 		public static bool ValidEnableAutoCheckPlugins()
 		{
 			return !EditorPrefs.GetBool(EditorPrefs_AutoEnablePlugins, true);
 		}
 
 
-		[MenuItem( "Tools/I2 Localization/Enable Plugins/Disable Auto Detection", false, 2 )]
+		[MenuItem( "Ktgame/I2 Localization/Enable Plugins/Disable Auto Detection", false, 2 )]
 		public static void DisableAutoCheckPlugins()
 		{
 			EditorPrefs.SetBool(EditorPrefs_AutoEnablePlugins, false);
 		}
-		[MenuItem( "Tools/I2 Localization/Enable Plugins/Disable Auto Detection", true)]
+		[MenuItem( "Ktgame/I2 Localization/Enable Plugins/Disable Auto Detection", true)]
 		public static bool ValidDisableAutoCheckPlugins()
 		{
 			return EditorPrefs.GetBool(EditorPrefs_AutoEnablePlugins, true);
 		}
 
 
-        [MenuItem("Tools/I2 Localization/Toggle Highlight Localized", false, 17)]
+        [MenuItem("Ktgame/I2 Localization/Toggle Highlight Localized", false, 17)]
         public static void ToogleH()
         {
             LocalizationManager.HighlightLocalizedTargets = !LocalizationManager.HighlightLocalizedTargets;
@@ -73,7 +73,7 @@ namespace I2.Loc
         }
 
 
-        [MenuItem("Tools/I2 Localization/Create Temp")]
+        [MenuItem("Ktgame/I2 Localization/Create Temp")]
         public static void CreateTemp()
         {
             LanguageSourceData source = LocalizationManager.Sources[0];
@@ -175,7 +175,7 @@ namespace I2.Loc
 			
 		}
 		
-		//[MenuItem( "Tools/I2 Localization/Create I2Languages", false, 1)]
+		//[MenuItem( "Ktgame/I2 Localization/Create I2Languages", false, 1)]
 		public static void CreateLanguageSources()
 		{
 			if (LocalizationManager.GlobalSources==null || LocalizationManager.GlobalSources.Length==0)
@@ -228,14 +228,14 @@ namespace I2.Loc
 		    AssetDatabase.Refresh();
 		}
 
-        [MenuItem("Tools/I2 Localization/Help", false, 30)]
+        [MenuItem("Ktgame/I2 Localization/Help", false, 30)]
         [MenuItem("Help/I2 Localization")]
         public static void MainHelp()
         {
             Application.OpenURL(LocalizeInspector.HelpURL_Documentation);
         }
 
-        [MenuItem("Tools/I2 Localization/Open I2Languages.asset", false, 0)]
+        [MenuItem("Ktgame/I2 Localization/Open I2Languages.asset", false, 0)]
         public static void OpenGlobalSource()
         {
             CreateLanguageSources();
